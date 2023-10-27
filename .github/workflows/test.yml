@@ -1,5 +1,5 @@
 name: Testing
-run-name: ${{ github.actor }} is testing on npm version ${{ npm.node-version }}🚀
+run-name: ${{ github.actor }} is testing 🚀
 on: [push]
 jobs:
   Run-Tests:
