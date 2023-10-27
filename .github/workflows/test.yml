@@ -11,7 +11,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - name: Install dependancies
+      - name: Install dependencies
         run: npm install
       - name: Run Tests
         run: npm run test:headless
