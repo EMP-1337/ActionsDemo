@@ -7,7 +7,10 @@ on:
     branches:
       - master
 jobs:
+  Testing:
+    uses: EMP-1337/ActionsDemo/.github/workflows/test.yml@master
   Deploy-Production:
+    needs: Testing
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
